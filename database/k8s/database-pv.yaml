@@ -12,3 +12,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
+  hostPath:
+    path: ./pv-volume
+    type: Directory
