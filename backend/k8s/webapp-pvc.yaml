@@ -1,17 +1,16 @@
-apiVersion: apps/v1
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: webapp-pvc
+  labels:
+    name: webapp-volume
 spec:
+  storageClassName: standard
   resources:
     requests:
       storage: 100Mi
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  claimRef:
-    kind: PersistentVolume
-    name: webapp-pv
-
 
 
