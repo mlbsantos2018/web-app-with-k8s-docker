@@ -11,4 +11,4 @@ spec:
   volumeMode: Filesystem
   accessModes:
     - ReadWriteOnce
-  reclaimPolicy: Recycle
+  persistentVolumeReclaimPolicy: Recycle
